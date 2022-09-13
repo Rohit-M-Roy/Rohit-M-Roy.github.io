@@ -6,10 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/355b3fa4a7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav></nav>
-    <div id="content"></div>
-    <div id="footer"></div>
+    <div class="header">
+        <div class="sideNavigationBar">
+            <div id="logo">
+                <!-- <img src="/Rohit-M-Roy.github.io/images/logo/1.png" alt="Rohit_Logo"> -->
+                <img src="/Rohit-M-Roy.github.io/images/logo/LogoImgPrimary.png" alt="Rohit_Logo2" class="logoImg">
+            </div>
+
+            <ul class="sideBarNavigation">
+                <li><a href="#"><i class="fa-solid fa-user"></i><p>About Me</p></a></li>
+                <li><a href="#"><i class="fa-sharp fa-solid fa-layer-group"></i><p>Tech Stack</p></a></li>
+                <li><a href="#"><i class="fa-solid fa-folder-tree"></i><p>Projects</p></a></li>
+                <li><a href="#"><i class="fa-solid fa-chart-simple"></i><p>Statistics</p></a></li>
+                <div class="active"></div>
+            </ul>
+        </div>
+
+        <div class="topNavigationBar">
+            <div id="hamburgerDropDown"><i class="fa-solid fa-bars"></i></div>
+            <div id="topLogo">
+                <img src="/Rohit-M-Roy.github.io/images/logo/LogoImgPrimary.png" alt="Rohit_Logo2" class="logoImg">
+            </div>
+        </div>
+    </div>
+
+    <div class="sideContent">
+        <div class="Me">
+            <div id="MeDescription">
+                <p class="normalFont">Hi I'm,</p>
+                <p class="nameFont">Rohit M Roy</p>
+                <!-- <p class="descriptionFont">A Full Stack Web Developer</p> -->
+            </div>
+            <div id="myImage">
+                <img id="myPic" src="/Rohit-M-Roy.github.io/images/MyImage/profile-pic.png" alt="RohitsPhoto">
+                <img id="myPicRound" src="/Rohit-M-Roy.github.io/images/MyImage/profile-picRound.png" alt="RohitsPhoto">
+            </div>
+        </div>
+        <div class="aboutMe">
+            <p class="descriptionFont">A Full Stack Web Developer hailing from Mumbai. Interested in Coding due to its ability to bring imagination to life. With my ongoing +1200 hours coding experience and DSA exposure. I am set to embark on a journey where I innovate and collaborate on different projects, constantly learning and growing to deliver efficient code to world problems.</p>
+        </div>
+        <div id="techStack">
+
+            <div class="techStackWrapper">
+                <div class="techStackCol">
+                    <div class="stackENtry">
+                        <i class="fa-brands fa-html5"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div class="stackENtry"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></div>
+                    <div class="stackENtry"><i class="fa-brands fa-square-js"></i><p>JavaScript</p></div>
+                    <div class="stackENtry"><i class="fa-brands fa-square-git"></i><p>Git</p></div>
+                </div>
+                <div class="techStackCol">
+                    <div class="stackENtry"><i class="fa-brands fa-java"></i><p>Java</p></div>
+                    <div class="stackENtry"></div>
+                    <div class="stackENtry"></div>
+                    <div class="stackENtry"></div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
 </body>
 </html>
