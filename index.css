@@ -184,9 +184,9 @@ body{
 
 .descriptionFont{
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 20px;
     word-spacing: 10px;
-    line-height: 40px;
+    line-height: 30px;
 }
 
 .aboutMe{
@@ -194,8 +194,15 @@ body{
     
 }
 
+#techStack>p{
+    padding-left: 50px;
+    padding-top: 70px;
+}
+
 .techStackWrapper{
+    /* border: 1px solid red; */
     margin: 20px 20px 20px 20px;
+    padding: 40px 30px;
     display: grid;
     margin: auto;
     grid-template-columns: 45% 45%;
@@ -203,17 +210,24 @@ body{
 }
 
 .techStackCol{
-    border:1px solid red;
-    margin: 20px;
+    /* border:1px solid red; */
     border-radius: 6px;
     padding: 10px;
 }
 
 .stackENtry{
-
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 6px;
     font-size: 30px;
+    padding: 20px;
     display: flex;
     margin-bottom: 20px;
+}
+
+.stackENtry:hover{
+
+    padding: 30px;
+    transition: 0.5s;
 }
 
 .stackENtry i{
@@ -223,8 +237,15 @@ body{
 
 }
 
+.stackENtry img{ 
+    height: 40px;
+    aspect-ratio: 1;
+    margin-right: 20px;
+}
 
-
+.stackENtry:nth-child(2) img{
+    width: 50px;
+}
 
 @media only screen and (max-width: 800px){
 
@@ -267,5 +288,26 @@ body{
         text-align: center;
         line-height: 30px;
     }
+
+    .stackENtry{
+        padding-left: 15px;
+    }
+
+    .stackENtry p{
+        font-size: 85%;
+        padding-top: 3px;
+    }
     
+}
+
+@media only screen and (max-width: 500px){
+
+    .stackENtry p{
+        display: none;
+    }
+
+    .stackENtry{
+        padding-left: 48px;
+    }
+
 }
