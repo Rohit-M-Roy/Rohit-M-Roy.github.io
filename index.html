@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rohit-M-Roy</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/355b3fa4a7.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon_io/site.webmanifest">
 </head>
 <body>
     <div class="header">
@@ -19,12 +23,12 @@
             <ul class="sideBarNavigation">
                 <li><a href="#"><i class="fa-solid fa-user"></i><p>About Me</p></a></li>
                 <li><a href="#techStack"><i class="fa-sharp fa-solid fa-layer-group"></i><p>Tech Stack</p></a></li>
-                <li><a href="#"><i class="fa-solid fa-folder-tree"></i><p>Projects</p></a></li>
+                <li><a href="#projects"><i class="fa-solid fa-folder-tree"></i><p>Projects</p></a></li>
                 <li><a href="#"><i class="fa-solid fa-chart-simple"></i><p>Statistics</p></a></li>
                 <div class="active"></div>
             </ul>
 
-            <button id="resumeButton">Resume</button>
+            <button id="resumeButton"><a href="/resume/Rohit_Moloy Roy_Resume.pdf" download>Resume</a></button>
         </div>
 
         <div class="topNavigationBar">
@@ -40,14 +44,11 @@
             <div id="MeDescription">
                 <p class="normalFont">Hi I'm,</p>
                 <p id="Name">
-                    <!--   Spice up your type with CSS -->
                       <span>
                         ROHIT M ROY
                       </span>
-                    <!--   &mdash; no JavaScript required &mdash; -->
+                      <!-- <img src="/images/gifs/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313336302f302a37513379765349765f7430696f4a2d5a2e676966.gif" alt=""> -->
                     </p>
-                <!-- <p class="nameFont">Rohit M Roy</p> -->
-                <!-- <p class="descriptionFont">A Full Stack Web Developer</p> -->
             </div>
             <div id="myImage">
                 <img id="myPic" src="images/MyImage/profile-picRound.png" alt="RohitsPhoto">
@@ -80,7 +81,59 @@
             </div>
         </div>
 
-        <div id="projects"></div>
+        <div id="projects">
+            <!-- <div class="projectEntry"></div> --> 
+            <div class="projectEntry">
+                <div class="projectImage">
+                    <img src="/images/Projects/project-phareasy-homepage.png" alt="">
+                </div>
+                <div class="projectDetails">
+                    <h2>PharmEasy Clone</h2>
+                    <p>PharEasy is an e-commerce platform for the purchase of medicines and other healthcare-related equipment. It one of the leading companies that have mordernized the healthcare setup in India.</p>
+                    <p>Cloned the website with a team of 5 aspiring Full stack web developers in 5 days with following functionalities:</p>
+                    <ul>
+                        <li>Signup Functionality</li>
+                        <li>Sorting Logic implemented in products</li>
+                        <li>add to cart functionality</li>
+                        <li>Payment Succes Page</li>
+                    </ul>
+                    <div class="usedTechInProjects"><i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-square-js"></i>
+                        <img id="pharmEasyProjectDeployment" src="/images/TechStack/netlify.png" alt="netlifyLink">
+                        <img id="pharmEasyProjectGithub" src="/images/TechStack/github.png" alt="githubLink">
+                        <button id="pharmEasyProjectDeploymentB"  class="deploymentButton">Deployed Link</button>
+                        <button id="pharmEasyProjectGithubB"  class="githubButton">Github</button>
+                    </div>
+                </div>
+            </div>
+            <div class="projectEntry">
+                <div class="projectImage">
+                    <img src="/images/Projects/BetterCloud-homepage.png" alt="">
+                </div>
+                <div class="projectDetails">
+                    <h2>BetterCloud - Clone</h2>
+                    <p>BetterCloud is the market leader for SaaS Operations, empowering IT to transform their employee experience, centralize data protection, and maximize operational efficiency.</p>
+                    <p>Lead a team of Full Stack Web Developers to plan, create and debug the clone in 5 Days. with the following functionalities:</p>
+                    <ul>
+                        <li>KanBan Approach used for Planning</li>
+                        <li>Advanced Css with Animation Effects</li>
+                        <li>Local Storage for Saving Form Submissions</li>
+                    </ul>
+                    <div class="usedTechInProjects">
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-square-js"></i>
+                        <img id="betterCloudProjectDeployment" src="/images/TechStack/netlify.png" alt="netlifyLink">
+                        <img id="betterCloudProjectGithub" src="/images/TechStack/github.png" alt="githubLink">
+                        <button id="betterCloudProjectDeploymentB" class="deploymentButton">Deployed Link</button>
+                        <button id="betterCloudProjectGithubB" class="githubButton">Github</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </body>
 </html>
+<script src="/index.js"></script>

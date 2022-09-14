@@ -17,9 +17,10 @@ body{
     
 } */
 
+
 .sideNavigationBar{
 
-    width: 250px;
+    width: 17vw;
     height: 400%;
     background-color: #313D5A;
     position: fixed;
@@ -105,7 +106,12 @@ body{
     border: 1px solid transparent;
 }
 
-#resumeButton:hover{
+#resumeButton a{
+    text-decoration: none;
+    color: #183642;
+}
+
+#resumeButton a:hover{
 
     color:white;
 }
@@ -153,66 +159,43 @@ body{
 
 
 .sideContent{
-    margin: 30px 10px 0px 120px;
+    margin: 20px 10px 0px 120px;
     width: 100%;
 
 }
 
 .Me{
 
-    border: 1px solid transparent;
+    /* border: 1px solid red; */
     text-align: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-/* body { font: 400 1em/1.5 "Neuton"; background: #090d00; color: rgba(255,255,255,.25); text-align: center; margin: 0 } */
-
 #Name {
+    /* border: 1px solid; */
 	text-transform: uppercase;
-	letter-spacing: .5em;
+	letter-spacing: .4em;
 	display: inline-block;
-	padding: 1.5em 0em;
-	position: absolute;
+	padding: 0.5em 0em;
+	/* position: absolute;
 	top: 17%;
-	left: 40%;
-	width: 40em;
-	margin: 0 0 0 -20em;
+	left: 40%; */
+	width: 100%;
+	margin: 6em 0 0 -3em;
 }
   #Name span {
-
+    /* border: 1px solid red; */
   	font: 700 4em/1 "Oswald", sans-serif;
+    font-size: 75px;
   	letter-spacing: 0;
-  	padding: .25em 0 .325em;
+  	padding: .15em 0 .225em;
 	  display: block;
 	  margin: 0 auto;
-
-/* Clip Background Image */
-
-	  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
-	  -webkit-background-clip: text;
-	  background-clip: text;
-
-/* Animate Background Image */
-
-	  -webkit-text-fill-color: transparent;
-	  -webkit-animation: aitf 80s linear infinite;
-
-/* Activate hardware acceleration for smoother animations */
-
-	  -webkit-transform: translate3d(0,0,0);
-	  -webkit-backface-visibility: hidden;
-
+      font-style: italic;
+      width:40vw;
   }
-
-
-/* Animate Background Image */
-
-@-webkit-keyframes aitf {
-	0% { background-position: 0% 50%; }
-	100% { background-position: 100% 50%; }
-}
 
 #MeDescription{
 
@@ -222,7 +205,7 @@ body{
 
 #myImage{
 
-    border: 1px solid transparent;
+    /* border: 1px solid blue; */
     width: 25%;
 }
 
@@ -314,13 +297,92 @@ body{
     width: 50px;
 }
 
+
+.projectEntry{
+    border: 1px solid;
+    border-radius: 20px;
+    width:90%;
+    padding: 40px;
+    margin: auto;
+    margin-bottom: 30px;
+    /* background-color: #183642; */
+    color: #183642;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.projectEntry img {
+    width:100%;
+}
+
+.projectDetails>h2{
+
+    padding: 1em;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.projectDetails>h2+p {
+    /* border: 1px solid green; */
+    padding:1em 0 0.4em 0;
+    font-size: 20px;
+}
+
+.projectDetails>h2+p+p{
+    /* border: 1px solid green; */
+    padding:0.5em 0 0.4em 0;
+    font-size: 20px;
+}
+
+.projectDetails li{
+    padding: 1em;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+.usedTechInProjects{
+    font-size: 50px;
+}
+
+.usedTechInProjects i{
+    margin:0.5em;
+}
+
+.usedTechInProjects img{
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.deploymentButton{
+    background-color: #313D5A;
+    color: white;
+    margin-top:5em;
+    padding:10px;
+    border-radius: 6px;
+}
+
+.githubButton{
+    background-color: #313D5A;
+    color:white;
+    padding:10px;
+    border-radius: 6px;
+}
+
 @media only screen and (max-width: 800px){
+
+    #Name span{
+        width:70vw;
+    }
+
+    #wrapper{
+        width: 100vw;
+    }
 
     .topNavigationBar{
         /* border: 1px solid black; */
         visibility: visible;
         height: 100px;
-        width: 100%;
+        width: 100vw;
         position: fixed;
         top: 0;
         z-index: 1;
@@ -367,8 +429,17 @@ body{
     
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 490px){
 
+    .topNavigationBar{
+        /* border: 1px solid black; */
+        visibility: visible;
+        height: 100px;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
     .stackENtry p{
         display: none;
     }
@@ -380,9 +451,14 @@ body{
     #Name span{
 
         font: 700 3em/1 "Oswald", sans-serif;
-        position: absolute;
-        left: 30%;
-        top:-120%;
+        width: 85vw;
+        font-size: 11vw;
+    }
+
+    .stackENtry{
+        pointer-events: none;
+        padding-left: 45px;
+        
     }
 
 }
