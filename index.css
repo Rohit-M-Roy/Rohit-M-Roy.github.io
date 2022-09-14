@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color:  #BCECF6;
+    background-color:  #FAF9F6;
     position: relative;
     display: flex;
 }
@@ -21,7 +21,7 @@ body{
 
     width: 250px;
     height: 400%;
-    background-color: #FF8691;
+    background-color: #ff8691;
     position: fixed;
     top: 0;
     left:0;
