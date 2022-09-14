@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color:  #FAF9F6;
+    background-color:  #CBC5EA;
     position: relative;
     display: flex;
 }
@@ -21,7 +21,7 @@ body{
 
     width: 250px;
     height: 400%;
-    background-color: #ff8691;
+    background-color: #313D5A;
     position: fixed;
     top: 0;
     left:0;
@@ -30,7 +30,7 @@ body{
 
 .topNavigationBar{
     visibility: hidden;
-    background-color: #ff8691;
+    background-color: #313D5A;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -80,7 +80,7 @@ body{
 }
 
 .sideBarNavigation li a{
-    color: #BCECF6;
+    color: white;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -92,10 +92,28 @@ body{
     margin-right: 21px;
 }
 
+#resumeButton{
+
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: #3F7CAC;
+    color:#391306;
+    font-weight: bold;
+    box-shadow: rgba(63, 124, 172, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border: 1px solid transparent;
+}
+
+#resumeButton:hover{
+
+    color:white;
+}
+
 .active{
 
     background-color: 
-    #FF2768;
+    #3F7CAC;
     width: 100%;
     height: 47px;
     position: absolute;
@@ -105,7 +123,7 @@ body{
     border-radius: 6px;
     /* display: none; */
     transition: top 0.5s;
-    box-shadow: 0 5px 10px rgba(255,39,104,0.4);
+    box-shadow: 0 5px 10px rgba(63, 124, 172, 0.4);
 }
 
 .sideBarNavigation li:hover a{
@@ -147,6 +165,53 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+/* body { font: 400 1em/1.5 "Neuton"; background: #090d00; color: rgba(255,255,255,.25); text-align: center; margin: 0 } */
+
+#Name {
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	padding: 1.5em 0em;
+	position: absolute;
+	top: 17%;
+	left: 40%;
+	width: 40em;
+	margin: 0 0 0 -20em;
+}
+  #Name span {
+
+  	font: 700 4em/1 "Oswald", sans-serif;
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  display: block;
+	  margin: 0 auto;
+
+/* Clip Background Image */
+
+	  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+  }
+
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
 }
 
 #MeDescription{
@@ -217,6 +282,8 @@ body{
 
 .stackENtry{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #183642;
+    color: white;
     border-radius: 6px;
     font-size: 30px;
     padding: 20px;
@@ -308,6 +375,14 @@ body{
 
     .stackENtry{
         padding-left: 48px;
+    }
+
+    #Name span{
+
+        font: 700 3em/1 "Oswald", sans-serif;
+        position: absolute;
+        left: 30%;
+        top:-120%;
     }
 
 }
