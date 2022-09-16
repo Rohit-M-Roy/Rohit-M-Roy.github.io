@@ -26,3 +26,5 @@ function redirect(no){
     }
     
 }
+
+GitHubCalendar(".calendar", "Rohit-M-Roy", { responsive: true });

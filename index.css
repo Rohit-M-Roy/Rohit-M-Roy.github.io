@@ -8,7 +8,8 @@
 body{
     background-color:  #CBC5EA;
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: 10% 82%;
 }
 
 /* .header{
