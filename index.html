@@ -34,7 +34,7 @@
                 <li><a href="#"><i class="fa-solid fa-user"></i><p>About Me</p></a></li>
                 <li><a href="#techStack"><i class="fa-sharp fa-solid fa-layer-group"></i><p>Tech Stack</p></a></li>
                 <li><a href="#projects"><i class="fa-solid fa-folder-tree"></i><p>Projects</p></a></li>
-                <li><a href="#"><i class="fa-solid fa-chart-simple"></i><p>Statistics</p></a></li>
+                <li><a href="#statistics"><i class="fa-solid fa-chart-simple"></i><p>Statistics</p></a></li>
                 <div class="active"></div>
             </ul>
 
@@ -42,7 +42,7 @@
         </div>
 
         <div class="topNavigationBar">
-            <div id="hamburgerDropDown"><i class="fa-solid fa-bars"></i></div>
+            <div><button id="resumeButton"><a href="/resume/Rohit_Moloy Roy_Resume.pdf" download>Resume</a></button></div>
             <div id="topLogo">
                 <img src="images/logo/logoBlue.png" alt="Rohit_Logo2" class="logoImg">
             </div>
@@ -69,7 +69,7 @@
             <p class="descriptionFont">A Full Stack Web Developer hailing from Mumbai. Interested in Coding due to its ability to bring imagination to life. With my ongoing +1200 hours coding experience and DSA exposure. I am set to embark on a journey where I innovate and collaborate on different projects, constantly learning and growing to deliver efficient code to world problems.</p>
         </div>
         <div id="techStack">
-            <p class="normalFont">Skills</p>
+            <p class="normalFont">Tech Stack</p>
             <div class="techStackWrapper">
                 <div class="techStackCol">
                     <div class="stackENtry">
@@ -88,6 +88,15 @@
                     
                 </div>
             
+            </div>
+            <div id="softskillsWrapper">
+                <p class="normalFont">Skills</p>
+                <div id="skills">
+                    <div class="skillEntry"><p>Communication</p></div>
+                    <div class="skillEntry"><p>FrontEnd</p></div>
+                    <div class="skillEntry"><p>BackEnd</p></div>
+                    <div class="skillEntry"><p>Data Structures & Algorithms</p></div>
+                </div>
             </div>
         </div>
 
@@ -144,13 +153,25 @@
 
         </div>
 
-        <div class="githubCalender">
-            <!-- Prepare a container for your calendar. -->
-            <div class="calendar">
-            <!-- Loading stuff -->
-            <!-- Loading the data just for you. -->
+        <div id="statistics">
+            <div class="githubCalender">
+                <p>My github Contributions</p>
+                <div class="calendar">
+                </div>
+            </div>
+            <div class="statCard">
+                <p><img src="https://github-readme-stats.vercel.app/api?username=rohit-m-roy&show_icons=true&locale=en&theme=tokyonight" alt="rohit-m-roy" /></p>
+            </div>
         </div>
-        </div>
+
+        <footer>
+            <div id="contactWrapper">
+                <div class="contactEntry"><a href="https://www.linkedin.com/in/rohit-m-roy/"><img src="/images/Footer/linkedin.png" alt=""></a></div>
+                <div class="contactEntry"><a href="https://github.com/Rohit-M-Roy"><img src="/images/Footer/github.png" alt=""></a></div>
+                <div><p class="footerFont">mrrohitroy09@gmail.com</p></div>
+                <div><p class="footerFont">+91 9082694931</p></div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

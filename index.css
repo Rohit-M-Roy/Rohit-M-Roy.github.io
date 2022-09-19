@@ -2,14 +2,14 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Poppins-Medium', sans-serif
+    font-family: 'Poppins-Medium', sans-serif;
 }
 
 body{
     background-color:  #CBC5EA;
     position: relative;
     display: grid;
-    grid-template-columns: 10% 82%;
+    grid-template-columns: 20% 80%;
 }
 
 /* .header{
@@ -160,7 +160,7 @@ body{
 
 
 .sideContent{
-    margin: 20px 10px 0px 120px;
+    margin-top: 100px;
     width: 100%;
 
 }
@@ -369,7 +369,112 @@ body{
     border-radius: 6px;
 }
 
+.githubCalender{
+    width:90%;
+}
+.githubCalender>p{
+    color: #183642;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.statCard{
+
+    /* margin-left: 50vh; */
+    margin-top: 5vh;
+    width: 50%;
+    
+}
+
+.statCard>p>img{
+    width:100%;
+}
+
+#softskillsWrapper{
+    padding: 40px 50px;
+    margin-bottom: 10vh;
+}
+
+#skills{
+    display: flex;
+    gap:30px;
+    padding: 20px;
+}
+
+.skillEntry{
+
+    
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(63, 124, 172, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#statistics{
+    width: 100%;
+}
+
+footer{
+    margin-top: 20vh;
+    margin-left: -3vw;
+    background-color: #3F7CAC;
+}
+
+.footerFont{
+    color:rgb(208, 205, 205);
+    font-family: 'Poppins-Medium', sans-serif;
+    font-size: 18px;
+}
+
+#contactWrapper{
+    width:80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4vh;
+    padding: 30px;
+}
+
+.contactEntry{
+    width:4vw;
+}
+
+.contactEntry img{
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 800px){
+
+    body{
+        display: block;
+    }
 
     #Name span{
         width:70vw;
@@ -427,10 +532,42 @@ body{
         font-size: 85%;
         padding-top: 3px;
     }
+    #skills{
+        gap:10px;
+    }
+
+    #softskillsWrapper{
+        margin-left: 0px;
+    }
+
     
 }
 
-@media only screen and (max-width: 490px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px){
 
     .topNavigationBar{
         /* border: 1px solid black; */
@@ -460,6 +597,14 @@ body{
         pointer-events: none;
         padding-left: 45px;
         
+    }
+
+    #skills{
+        display: grid;
+    }
+
+    #softskillsWrapper{
+        margin-left: 0px;
     }
 
 }
