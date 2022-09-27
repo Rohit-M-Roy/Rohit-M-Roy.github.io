@@ -27,4 +27,17 @@ function redirect(no){
     
 }
 
+$(document).ready(function(){
+	$('#nav-icon1').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+
+let hamburgerButton = document.getElementById('nav-icon1');
+let responsiveMenu = document.getElementById('dropdownMenu');
+
+hamburgerButton.addEventListener('click', () => {
+  responsiveMenu.classList.toggle('expand');
+});
+
 GitHubCalendar(".calendar", "Rohit-M-Roy", { responsive: true });
