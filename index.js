@@ -12,7 +12,9 @@ document.querySelector("#betterCloudProjectGithubB").addEventListener("click",()
 document.querySelector("#betterCloudProjectDeploymentB").addEventListener("click",()=>{redirect(3)});
 document.querySelector("#pharmEasyProjectDeploymentB").addEventListener("click",()=>{redirect(2)});
 document.querySelector("#pharmEasyProjectGithubB").addEventListener("click",()=>{redirect(23)});
-
+document.querySelector("#StsKartProjectGithub").addEventListener("click", ()=>{redirect(1)});
+document.querySelector("#StsKartProjectDeployment").addEventListener("click",()=>{redirect(13)});
+document.querySelector("#StsKartProjectGithubB").addEventListener("click", ()=>{redirect(1)});
 
 function redirect(no){
     if(no == 3){
@@ -23,6 +25,10 @@ function redirect(no){
         window.open("https://github.com/Rohit-M-Roy/PharmEasy-Clone");
     }else if(no == 33){
         window.open("https://github.com/Rohit-M-Roy/peaceful-bomb-7093");
+    }else if(no == 1){
+        window.open("https://github.com/Rohit-M-Roy/STSKart-Java-Rest-API-project-");
+    }else if(no == 13){
+        window.open("http://onlineshop-env.eba-cxymjmdv.ap-northeast-1.elasticbeanstalk.com/swagger-ui/");
     }
     
 }
